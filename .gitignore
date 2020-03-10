@@ -1,4 +1,6 @@
 
+resources/env.properties
+
 # Created by https://www.gitignore.io/api/java,linux,macos,windows,netbeans,intellij+all
 # Edit at https://www.gitignore.io/?templates=java,linux,macos,windows,netbeans,intellij+all
 
@@ -193,3 +195,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/java,linux,macos,windows,netbeans,intellij+all
+/target/
+/nbproject/
