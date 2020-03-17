@@ -5,11 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Configuration {
     public static String chromeDriverPath;
+    public static String adminLoginUrl;
     public static String validEmail;
     public static String validPassword;
     
@@ -19,8 +18,9 @@ public class Configuration {
         prop.load(fis);
         
         chromeDriverPath = prop.getProperty("chromeDriverPath");
-        chromeDriverPath = prop.getProperty("validEmail");
-        chromeDriverPath = prop.getProperty("validPassword");
+        adminLoginUrl = prop.getProperty("adminLoginUrl");
+        validEmail = prop.getProperty("validEmail");
+        validPassword = prop.getProperty("validPassword");
     }
    
 }
